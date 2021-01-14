@@ -15,9 +15,6 @@ app.get("/", (request, response) => {
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);
-setInterval(() => {
-  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
-}, 280000);
 const Alone = "#36393e";
 const AloneDogru = "#22BF41";
 const AloneHata = "#f30707";
